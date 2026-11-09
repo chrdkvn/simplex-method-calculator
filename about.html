@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Simplex Solver | About</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/about.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/dark-mode.css">
+	</head>
+	<body>
+		<header class="site-header">
+			<a class="brand" href="index.html">
+				<span class="brand-mark">S</span>
+				<span>Simplex<span class="brand-light">Solver</span></span>
+			</a>
+			<button class="menu-toggle" type="button" aria-label="Toggle menu">☰</button>
+			<nav class="main-nav">
+				<a href="index.html">Home</a>
+				<a href="solving.html">Solver</a>
+				<a href="reviewer.html">Reviewer</a>
+				<a class="active" href="about.html" aria-current="page">About</a>
+				<button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">◐</button>
+			</nav>
+		</header>
+
+		<main class="page-wrap">
+			<div class="page-heading">
+				<span class="eyebrow">ABOUT THIS APPLICATION</span>
+				<h1>Making optimization easier to understand.</h1>
+				<p>Simplex Solver is an educational web application designed to help students practice linear programming and understand the Simplex Method.</p>
+			</div>
+			<section class="about-grid">
+				<article class="panel">
+					<span class="step-label">PROJECT PURPOSE</span>
+					<h2>Learn by solving</h2>
+					<p>The application provides a workspace for solving linear programming problems, viewing tableau iterations, and reviewing core concepts through lessons and quizzes.</p>
+					<h3>Project objectives</h3>
+					<ul>
+						<li>Provide a straightforward interface for MAX and MIN problems.</li>
+						<li>Show the sequence of tableau operations.</li>
+						<li>Support learning through examples and short quizzes.</li>
+						<li>Encourage verification of mathematical models and results.</li>
+					</ul>
+				</article>
+				<article class="panel team-panel">
+					<span class="step-label">DEVELOPMENT TEAM</span>
+					<h2>Meet the team</h2>
+					<div id="teamMembers" class="team-list"></div>
+					<p class="hint">Replace the sample names in <code>js/team/members.js</code> with your actual team information and add member photos to <code>assets/team/</code>.</p>
+				</article>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<span>© <span data-year></span> Simplex Solver</span>
+			<span>Educational tool for Linear Programming</span>
+		</footer>
+		<script src="js/theme.js"></script>
+		<script src="js/navigation.js"></script>
+		<script src="js/team/members.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

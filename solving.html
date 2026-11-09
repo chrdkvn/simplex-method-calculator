@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Simplex Solver | Solver</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/solving.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/dark-mode.css">
+	</head>
+	<body>
+		<header class="site-header">
+			<a class="brand" href="index.html">
+				<span class="brand-mark">S</span>
+				<span>Simplex<span class="brand-light">Solver</span></span>
+			</a>
+			<button class="menu-toggle" aria-label="Toggle menu">☰</button>
+			<nav class="main-nav">
+				<a href="index.html">Home</a>
+				<a class="active" href="solving.html">Solver</a>
+				<a href="reviewer.html">Reviewer</a>
+				<a href="about.html">About</a>
+				<button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">◐</button>
+			</nav>
+		</header>
+
+		<main class="page-wrap">
+			<div class="page-heading">
+				<span class="eyebrow">LINEAR PROGRAMMING</span>
+				<h1>Simplex Solver</h1>
+				<p>Define your objective function and constraints. Variables are assumed to be non-negative.</p>
+			</div>
+
+			<section class="solver-layout">
+				<form id="solverForm" class="panel solver-form">
+					<div class="panel-title">
+						<div>
+							<span class="step-label">STEP 01</span>
+							<h2>Problem setup</h2>
+						</div>
+						<button type="button" id="loadExample" class="text-button">Load example</button>
+					</div>
+
+					<label class="field-label">Optimization type</label>
+					<div class="segmented">
+						<label><input type="radio" name="mode" value="max" checked><span>Maximize</span></label>
+						<label><input type="radio" name="mode" value="min"><span>Minimize</span></label>
+					</div>
+
+					<label class="field-label" for="objective">Objective function</label>
+					<div class="input-row">
+						<span class="math-prefix" id="objectivePrefix">Max Z =</span>
+						<input id="objective" type="text" value="1.5, 1.2" placeholder="Example: 3, 5" required>
+					</div>
+					<small class="hint">Enter one coefficient per variable, separated by commas. Example: 3, 5 means 3x₁ + 5x₂.</small>
+
+					<div class="constraints-heading">
+						<label class="field-label">Constraints</label>
+						<button type="button" id="addConstraint" class="small-button">＋ Add constraint</button>
+					</div>
+					<div id="constraintsList"></div>
+					<small class="hint">Each row contains coefficients, a relation, and a right-hand-side value.</small>
+
+					<div class="form-actions">
+						<button type="reset" class="btn btn-secondary" id="resetForm">Clear</button>
+						<button type="submit" class="btn btn-primary">Solve problem <span>→</span></button>
+					</div>
+				</form>
+
+				<section class="panel results-panel">
+					<div class="panel-title">
+						<div>
+							<span class="step-label">STEP 02</span>
+							<h2>Solution</h2>
+						</div>
+						<span class="result-state" id="resultState">Awaiting input</span>
+					</div>
+					<div id="results" class="results-content">
+						<div class="empty-state">
+							<div class="empty-icon">∑</div>
+							<h3>Your solution will appear here</h3>
+							<p>Complete the problem setup and select <b>Solve problem</b> to view the result and tableau iterations.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<span>© <span data-year></span> Simplex Solver</span>
+			<span>Check your model before using the result.</span>
+		</footer>
+
+		<script src="js/theme.js"></script>
+		<script src="js/navigation.js"></script>
+		<script src="js/solver/validation.js"></script>
+		<script src="js/solver/tableau.js"></script>
+		<script src="js/solver/simplex.js"></script>
+		<script src="js/solver/maximization.js"></script>
+		<script src="js/solver/minimization.js"></script>
+		<script src="js/solver/results.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

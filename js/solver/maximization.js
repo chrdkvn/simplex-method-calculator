@@ -1,0 +1,1 @@
+function solveMax(problem){return runSimplex({...problem,mode:"max"});}
