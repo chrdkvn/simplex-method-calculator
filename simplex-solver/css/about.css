@@ -1,0 +1,54 @@
+.about-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.about-grid p,
+.about-grid li {
+	color: var(--muted);
+	font-size: 13px;
+}
+
+.about-grid ul {
+	padding-left: 19px;
+}
+
+.about-grid li {
+	margin: 8px 0;
+}
+
+.team-list {
+	display: grid;
+	gap: 10px;
+}
+
+.team-member {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 12px;
+	border: 1px solid var(--line);
+	border-radius: 11px;
+}
+
+.avatar {
+	display: grid;
+	width: 42px;
+	height: 42px;
+	place-items: center;
+	border-radius: 13px;
+	background: var(--pale);
+	color: var(--blue-text);
+	font-weight: 800;
+}
+
+.team-member strong {
+	display: block;
+	font-size: 13px;
+}
+
+.team-member small {
+	color: var(--muted);
+	font-size: 11px;
+}
