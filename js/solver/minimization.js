@@ -1,0 +1,1 @@
+function solveMin(problem){return runSimplex({...problem,mode:"min"});}

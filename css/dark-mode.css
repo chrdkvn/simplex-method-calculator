@@ -1,0 +1,65 @@
+body.dark {
+	--bg: #101522;
+	--surface: #192233;
+	--text: #edf2fb;
+	--muted: #9aa8bc;
+	--line: #2a374b;
+	--pale: #23345e;
+	--blue-text: #a9bcff;
+	--shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+	--success-bg: #173d32;
+	--success-text: #78d8b0;
+	--danger-bg: #4a252c;
+	--danger-text: #ff9ca7;
+	--info-bg: #1b3544;
+	--info-text: #d7effa;
+	--info-accent: #83d8f4;
+	--warning-bg: #413722;
+	--warning-text: #ffe6a3;
+	--check-bg: #352f21;
+	--highlight-bg: #4a4122;
+	--highlight-text: #fff3bf;
+	--highlight-strong-bg: #66521b;
+	--highlight-strong-text: #fff3bf;
+	--positive-text: #78d8b0;
+	color-scheme: dark;
+}
+
+body.dark .hero-visual {
+	background: linear-gradient(145deg, #1b2945, #182236);
+	border-color: #304264;
+}
+
+body.dark .formula-card,
+body.dark .solution-tag {
+	background: #202d40;
+	border-color: #35445b;
+	color: #edf2fb;
+}
+
+body.dark .formula-card small {
+	color: #b2c0d8;
+}
+
+body.dark .visual-top {
+	color: #b2c0d8;
+}
+
+body.dark .visual-chip {
+	background: #263957;
+	color: #b8caff;
+}
+
+body.dark .formula-line {
+	background: #3a4658;
+}
+
+body.dark .result-state.success {
+	background: var(--success-bg);
+	color: var(--success-text);
+}
+
+body.dark .result-state.error {
+	background: var(--danger-bg);
+	color: var(--danger-text);
+}

@@ -1,0 +1,208 @@
+.hero {
+	width: min(1120px, 90%);
+	margin: 65px auto 78px;
+	display: grid;
+	grid-template-columns: 1.1fr 0.9fr;
+	gap: 65px;
+	align-items: center;
+}
+
+.hero h1 {
+	font-size: clamp(42px, 6vw, 65px);
+	line-height: 1.03;
+	letter-spacing: -2.7px;
+	margin: 16px 0;
+}
+
+.hero h1 span {
+	color: var(--blue-text);
+}
+
+.hero-copy > p {
+	max-width: 530px;
+	color: var(--muted);
+	font-size: 16px;
+}
+
+.hero-actions {
+	display: flex;
+	gap: 12px;
+	margin: 27px 0;
+}
+
+.hero-note {
+	font-size: 12px;
+	color: var(--muted);
+}
+
+.status-dot {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	background: #25ad79;
+	border-radius: 50%;
+	margin-right: 7px;
+}
+
+.hero-visual {
+	padding: 25px;
+	background: linear-gradient(145deg, #eaf0ff, #f8faff);
+	border: 1px solid #dce5ff;
+	border-radius: 24px;
+	position: relative;
+	box-shadow: 0 25px 60px rgba(40, 85, 217, 0.12);
+}
+
+.visual-top {
+	display: flex;
+	justify-content: space-between;
+	font-size: 9px;
+	letter-spacing: 1.2px;
+	font-weight: 800;
+	color: #5d6b89;
+}
+
+.visual-chip {
+	background: #fff;
+	color: var(--blue-text);
+	padding: 5px 8px;
+	border-radius: 6px;
+}
+
+.formula-card {
+	background: #fff;
+	border: 1px solid #e7ecf7;
+	border-radius: 15px;
+	padding: 25px;
+	margin-top: 22px;
+	color: #172033;
+	box-shadow: 0 8px 24px rgba(23, 32, 51, 0.05);
+}
+
+.formula-card small {
+	font-size: 9px;
+	letter-spacing: 1.2px;
+	color: #7c879b;
+	font-weight: 800;
+}
+
+.formula-card strong {
+	display: block;
+	font-size: 24px;
+	margin: 8px 0 15px;
+}
+
+.formula-line {
+	height: 1px;
+	background: #e8edf5;
+	margin: 16px 0;
+}
+
+.formula-card p {
+	margin: 5px 0;
+	font-family: ui-monospace, monospace;
+	font-size: 13px;
+}
+
+.solution-tag {
+	position: absolute;
+	right: -18px;
+	bottom: 7px;
+	background: #fff;
+	border: 1px solid #e7ecf7;
+	border-radius: 12px;
+	padding: 12px 17px;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	box-shadow: var(--shadow);
+}
+
+.solution-tag > span {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background: #e7f8f0;
+	color: #169b68;
+	display: grid;
+	place-items: center;
+}
+
+.solution-tag small {
+	display: block;
+	color: var(--muted);
+	font-size: 8px;
+	letter-spacing: 1px;
+}
+
+.solution-tag strong {
+	font-size: 16px;
+}
+
+.feature-section {
+	width: min(1120px, 90%);
+	margin: 0 auto 80px;
+}
+
+.section-heading {
+	text-align: center;
+	margin-bottom: 28px;
+}
+
+.section-heading h2 {
+	font-size: 30px;
+	letter-spacing: -1px;
+	margin: 6px;
+}
+
+.section-heading p {
+	color: var(--muted);
+	font-size: 13px;
+}
+
+.feature-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 17px;
+}
+
+.feature-card {
+	background: var(--surface);
+	border: 1px solid var(--line);
+	border-radius: 16px;
+	padding: 24px;
+	transition: 0.2s;
+}
+
+.feature-card:hover {
+	transform: translateY(-4px);
+	box-shadow: var(--shadow);
+}
+
+.feature-icon {
+	width: 40px;
+	height: 40px;
+	border-radius: 12px;
+	background: var(--pale);
+	color: var(--blue-text);
+	display: grid;
+	place-items: center;
+	font-size: 22px;
+}
+
+.feature-card h3 {
+	font-size: 16px;
+	margin: 17px 0 6px;
+}
+
+.feature-card p {
+	font-size: 12px;
+	color: var(--muted);
+	min-height: 56px;
+}
+
+.card-link {
+	font-size: 12px;
+	color: var(--blue-text);
+	font-weight: 800;
+}
